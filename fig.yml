@@ -100,3 +100,10 @@ wildfly:
    - "9990:9990"
    - "8009:8009"
   hostname: wildfly
+apache:
+  image: qburstdevops/apache2410
+  ports:
+   - "80:80"
+  links:
+   - wildfly:wf
+  hostname: apache
