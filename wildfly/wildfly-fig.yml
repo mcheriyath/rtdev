@@ -1,0 +1,8 @@
+wildfly:
+  image: qburstdevops/wildfly
+  ports:
+   - "8080:8080"
+   - "9990:9990"
+   - "8009:8009"
+   - "9001:9001"
+  hostname: wildfly
